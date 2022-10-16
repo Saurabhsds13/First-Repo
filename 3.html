@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<link rel="shortcut icon" href="#" />
+<script>
+  // Single Level Inheritance.
+  class a {
+    myFun1() {
+      console.log("class a");
+    }
+  }
+  class b extends a {
+    // inherited class a.
+    myFun2() {
+      console.log("Class b");
+    }
+    myFun1() {
+      super.myFun1();
+      console.log("HElloooo");
+    }
+  }
+  // Method overiding - overites the methods of parent class when callec from another calss then used super keyword.
+  var rec = new b();
+  console.log(rec);
+  rec.myFun1();
+  rec.myFun2();
+</script>

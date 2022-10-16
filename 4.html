@@ -1,0 +1,15 @@
+<script>
+  class A {
+    constructor() {
+      console.log("A");
+    }
+  }
+  class B extends A {
+    constructor() {
+      console.log("const B");
+      super(); // Call consr from parent class.
+      console.log(this); // Use super before this keyword
+    }
+  }
+  var rec = new B();
+</script>

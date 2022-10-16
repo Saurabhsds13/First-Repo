@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<link rel="shortcut icon" href="#" />
+<script>
+  // INHERITANCE
+  class tv {
+    //Storage
+    constructor() {
+      //constructor will call automatically, Constructor is building method.
+      console.log("this is constructor");
+      this.channel = "SONY";
+    }
+    volume() {
+      console.log("Doulby Sound");
+      console.log(this.channel);
+    }
+  }
+  var remote = new tv(); // object or instance creation.
+  var remote1 = new tv();
+  remote.volume();
+</script>
